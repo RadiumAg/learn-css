@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html{
+            height: 100%;
+        }
+
+        div.grid{
+            display: grid;
+            grid-template-columns: 50px 50px 50px max-content;
+            grid-template-rows: 50px;
+            /* 控制容器 */
+            justify-content: center; 
+            align-content: center;
+            justify-items: center;
+            align-items: center;
+            height: 100%;
+        }
+    </style>
+</head>
+<body> 
+    <div class="grid">
+        <div>111</div>
+        <div>11</div>
+        <div>11</div>
+        <div>11</div>
+    </div>
+</body>
+</html>
