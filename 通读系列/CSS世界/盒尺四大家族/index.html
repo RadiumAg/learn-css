@@ -40,6 +40,28 @@
             height: 100px;
             margin-right: 20px;
         }
+
+        div.flex {
+            width: 200px;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        div.flex>div {
+            display: inline;
+            flex-basis: 50%;
+            margin-bottom: -9999px;
+            padding-bottom: 9999px;
+        }
+
+        div.flex>div:nth-child(1) {
+            background-color: blue;
+        }
+
+        div.flex>div:nth-child(2) {
+            background-color: aqua;
+        }
     </style>
 </head>
 
@@ -54,6 +76,25 @@
         <li>列表2</li>
         <li>列表3</li>
     </ul>
+    <p>等高布局</p>
+    <div class="flex">
+        <div>
+            <p>111111</p>
+            <p>111111</p>
+            <p>111111</p>
+            <p>111111</p>
+            <p>111111</p>
+        </div>
+        <div>
+            <p>111111</p>
+            <p>111111</p>
+            <p>111111</p>
+            <p>111111</p>
+            <p>111111</p>
+            <p>111111</p>
+        </div>
+    </div>
+
 </body>
 
 </html>
