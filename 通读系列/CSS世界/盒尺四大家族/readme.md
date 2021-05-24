@@ -87,3 +87,26 @@ CSS 等高布局
 
 3.负负值最负值
 
+
+
+##### 深入理解CSS中的margin:auto
+
+###### margin:auto的填充规则如下:car:  ：​
+
+1.如果一侧定值，一侧auto,则auto为剩余空间大小。
+
+2.如果两侧均是auto，则平分剩余空间。
+
+
+
+使用margin:auto 垂直居中:
+
+```css
+.son { 
+ position: absolute; 
+ top: 0; right: 0; bottom: 0; left: 0; 
+ width: 200px; height: 100px; 
+ margin: auto; 
+}
+```
+
