@@ -101,7 +101,7 @@ CSS 等高布局
 
 
 
-使用margin:auto 垂直居中:
+使用margin:auto 垂直居中 :fire: ：
 
 ```css
 .son { 
