@@ -8,6 +8,11 @@
     <title>Document</title>
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         :lang(ch)>q {
             quotes: '"''"';
         }
@@ -19,6 +24,22 @@
         :lang(no)>q {
             quotes: '《''》';
         }
+
+        ul {
+            display: inline-block;
+            background-color: blue;
+            margin-right: -20px;
+
+        }
+
+        ul>li {
+            list-style: none;
+            background-color: brown;
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
     </style>
 </head>
 
@@ -26,6 +47,13 @@
     <p lang="ch"><q>这本书很赞!</q></p>
     <p lang="en"><q>This boos is very good!</q></p>
     <p lang="no"><q>denne bog er fantastisk!</q></p>
+    <br />
+    <p>margin与元素的内部尺寸</p>
+    <ul>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+    </ul>
 </body>
 
 </html>

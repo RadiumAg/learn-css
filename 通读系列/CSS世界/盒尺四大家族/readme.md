@@ -35,5 +35,34 @@ q:before { content: open-quote; }
 q:after { content: close-quote; }
 ```
 
-![](C:\Users\Iloveprpr\Desktop\lean-css\通读系列\盒尺四大家族\01.png)
 
+
+![](.\01.png)
+
+
+
+##### 深入理解content计数器
+
+​	1.属性counter-reset:"计数器-重置""的有意思。起个名字，默认是0。
+
+​	2.counter-increment:计数器递增。
+
+
+
+##### 温和的padding
+
+使用label模拟按钮
+
+```css
+label { 
+ display: inline-block; 
+ line-height: 20px; 
+ padding: 10px; 
+}
+```
+
+
+
+##### 激进的margin属性
+
+margin负数，表示充分可利用空间
