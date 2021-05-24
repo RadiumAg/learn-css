@@ -19,4 +19,5 @@ img {
 
 ##### 内联元素(inline-level elements)
 
-​	
+​	元素的display的默认值位inline。
+
