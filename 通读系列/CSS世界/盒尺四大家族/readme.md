@@ -49,7 +49,7 @@ q:after { content: close-quote; }
 
 
 
-##### 温和的padding
+## 温和的padding
 
 使用label模拟按钮
 
@@ -63,7 +63,7 @@ label {
 
 
 
-##### 激进的margin属性
+## 激进的margin属性
 
 margin负数，表示充分可利用空间
 
@@ -99,6 +99,8 @@ CSS 等高布局
 
 
 
+
+
 使用margin:auto 垂直居中:
 
 ```css
@@ -109,4 +111,18 @@ CSS 等高布局
  margin: auto; 
 }
 ```
+
+
+
+## Border属性
+
+##### border关键字:
+
+​	1.thin,等同于1px
+
+​    2.medium,等同于3px
+
+​    3.thick,等同于4px
+
+
 
