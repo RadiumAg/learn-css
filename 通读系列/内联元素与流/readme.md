@@ -2,9 +2,11 @@
 
 
 
-## x-height
+## x-height概念（x的字母高度）
 
-​	middle指的是基线往上1/2 x-height 高度。
+​	定义：指的是字母x的高度；
+
+​	vertical-align:middle指的是基线往上1/2 x-height 高度。vertical-align:middle效果只是一种近似效果，因为不同的字体在内联元素中的位置是不一样的。
 
 
 

@@ -12,11 +12,32 @@
         .box {
             line-height: 32px;
             font-size: 24px;
+
         }
 
         .box>span {
             font-size: 24px;
             /* vertical-align: top; */
+        }
+
+        .font-align {
+            background-color: bisque;
+            line-height: 100px;
+        }
+
+        .mutily-font-align {
+            background-color: bisque;
+            line-height: 120px;
+            width: 100px;
+            word-wrap: break-word;
+        }
+
+        .mutily-font-align div {
+            line-height: 20px;
+            display: inline-block;
+            word-break: break-all;
+            vertical-align: middle;
+            /*关键*/
         }
     </style>
 </head>
@@ -24,6 +45,14 @@
 <body>
     <div class="box">
         x<span>文字X</span>
+    </div>
+    <p>单行文字和容器居中</p>
+    <div class="font-align">qqqqqqqqq</div>
+    <p>多行文字和容器居中</p>
+    <div class="mutily-font-align">
+        <div>
+            qqqqqqqq1111
+        </div>
     </div>
 </body>
 
