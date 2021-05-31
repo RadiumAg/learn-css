@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div.demo {
+            direction: rtl;
+            width: 210px;
+        }
+
+        div.demo img {
+            width: 100px;
+        }
+
+        .rtl {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        .rtl>span {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <p>direction:rtl</p>
+    <p style="direction:rtl;">v c</p>
+    <p>direction:ltr</p>
+    <p style="direction:ltr;">v c</p>
+
+
+    <p>特殊效果</p>
+    <div class="demo">
+        <img src="./girl.jpg" alt="">
+        <img src="./girl.jpg" alt="">
+        <img src="./girl.jpg" alt="">
+    </div>
+
+    <p>unicode-bidi</p>
+    <p class="rtl">
+        开头是我，<span style="unicode-bidi: normal;">这是中间</span>，然后是结束
+    </p>
+    <p class="rtl">
+        开头是我，<span style="unicode-bidi: embed;">这是中间</span>，然后是结束
+    </p>
+</body>
+
+</html>
