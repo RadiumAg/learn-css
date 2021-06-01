@@ -6,10 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        div.blue {
+            background: #58a;
+            background-image:
+                linear-gradient(white 2px, transparent 0),
+                linear-gradient(90deg, white 2px, transparent 0),
+                linear-gradient(hsla(0, 0%, 100%, .3) 1px, transparent 0),
+                linear-gradient(90deg, hsla(0, 0%, 100%, .3) 1px, transparent 0);
+            background-size: 75px 75px, 75px 75px, 15px 15px, 15px 15px;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
 </head>
 
 <body>
-
+    <p>蓝图网格</p>
+    <div class="blue"></div>
 </body>
 
 </html>
