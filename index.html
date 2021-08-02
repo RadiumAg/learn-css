@@ -6,26 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <style>
-        div.content {
-            background-color: black;
-            line-height: 60px;
+        html,
+        body,
+        .container {
+            width: 100%;
+            height: 100%;
         }
 
-        div.content div {
-            line-height: 15px;
-            background-color: white;
-            display: inline-block;
-            vertical-align: middle;
+        div.container {
+            display: flex
+        }
+
+        div.box0 {
+            flex: 0 0 100px;
+            background: blue;
+            height: 100%;
+        }
+
+        div.box1 {
+            flex: 1;
+            background-color: red;
+            height: 100%;
+        }
+
+        div.box2 {
+            flex: 0 0 100px;
+            background: blue;
+            height: 100%;
         }
     </style>
 </head>
 
 <body>
-    <div class="content">
-        <div>content</div>
-        <div>content</div>
+    <div class="container">
+        <div class="box0"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
     </div>
 </body>
 
