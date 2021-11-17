@@ -1,6 +1,7 @@
 
-@use './var.scss' as c;
+@forward  './var.scss';
+@forward  './varb.scss';
 
 .html {
-    color:  c.$color-primary;
+    color:  $color-primary;
 }
