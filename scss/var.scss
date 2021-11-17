@@ -1,0 +1,12 @@
+$color-primary: white ;
+$white : black;
+
+@mixin  a {
+    border-color:  $color-primary;
+}
+
+
+.html {
+    align-items: center;
+}
+

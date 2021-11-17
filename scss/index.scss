@@ -1,0 +1,6 @@
+
+@use './var.scss' as c;
+
+.html {
+    color:  c.$color-primary;
+}
