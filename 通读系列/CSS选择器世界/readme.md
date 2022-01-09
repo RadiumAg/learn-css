@@ -136,11 +136,31 @@ style属性内联
 
 
 
-# 激活状态伪类:active
+# 用户行为伪类
+
+## active
 
 **定义**
 
 :active 伪类可以用于设置元素激活状态的样式，可以通过点击鼠标主键，也可以通过手指或者触控笔点击触摸屏触发激活状态。
+
+
+
+**:active伪类与CSS数据**
+
+想知道两个按钮的点击率
+
+```css
+.button-l:active::after {
+   content:url(./pixel.gif?action=click&id=button1);
+   display:none;
+}
+
+.button-2:active::after {
+    content:url(./pixel.gifaction=click&id=button2);
+    display:none;
+}
+```
 
 **注意**
 
@@ -149,4 +169,44 @@ style属性内联
 2.在IE浏览器下，<html>,<body>元素应用`:active`伪类设置背景色之后，背景色是无法还原的。
 
 3.移动端`Safari` 浏览器下，`:active` 伪类默认是无效的。
+
+## :focus伪类匹配机制
+
+**匹配机制**
+
+与:active不同，`:focus`伪类默认只能匹配特定的元素，包括:
+
+1. 非disabled状态的表单元素，如`<input>` ，`<select>` ,`button`
+2. 包含`href` 属性的`<a>` 元素
+3. `<area>` 元素
+4. HTML5的 `<summary>` 元素。
+
+如何让普通元素响应 
+
+1.`:focus`, 设置了`HTML` `contenteditable`属性的普通元素可以应用`:focus` 伪类。例如:
+
+```html
+<div contenteditable="true"></div>
+<div contenteditable="plaintext-only"></div>
+```
+
+2.设置`tabindex`
+
+```html
+<div tabindex="-1"></div>
+```
+
+
+
+## 整体焦点伪类:focus-within
+
+**定义**
+
+在当前元素或是当前元素的任意子元素处于聚焦状态时去匹配。
+
+
+
+## 键盘焦点伪类:focus-visible
+
+
 
